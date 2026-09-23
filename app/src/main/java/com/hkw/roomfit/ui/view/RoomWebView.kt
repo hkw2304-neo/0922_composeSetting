@@ -1,6 +1,7 @@
 package com.hkw.roomfit.ui.view
 
 import android.content.Context
+import android.util.Log
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.compose.foundation.background
@@ -25,6 +26,7 @@ fun RoomWebView(
     val webViewPath = state.webViewPath
     val context: Context = LocalContext.current
     val webView = WebView(context)
+
 
     Box(
         modifier =
