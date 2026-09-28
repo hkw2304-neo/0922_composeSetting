@@ -18,8 +18,7 @@ class PreferenceManager @Inject constructor(
 
     fun getName(): String {
         val name: String = prefs.getString(_PREFS_NAME_KEY, "") ?: ""
-//        return prefs.getString(key, "")
-            return name
+        return name
     }
     fun setName(value: String) {
         prefs.edit { putString(_PREFS_NAME_KEY, value) }

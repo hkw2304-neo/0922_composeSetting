@@ -52,7 +52,7 @@ fun RoofitTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = RoomFitTypography,
         content = content
     )
 }
