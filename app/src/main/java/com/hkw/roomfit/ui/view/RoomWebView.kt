@@ -54,6 +54,7 @@ fun RoomWebView(
 ) {
     val state by viewModel.state.collectAsState()
     val webViewPath = state.webViewPath
+    // LocalContext.current : Activity단의 context랑 동일
     val context: Context = LocalContext.current
     val webView = state.webView
 //    val webViews = WebView(context)
@@ -82,8 +83,6 @@ fun RoomWebView(
     }
 
     // 2. 카메라 권한 요청 Launcher
-    // 임시 테스트
-    // stash 테스트
     val cameraPermissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
     ) { isGranted ->
