@@ -9,7 +9,7 @@ import androidx.core.content.edit
 
 @Singleton
 class PreferenceManager @Inject constructor(
-    @ApplicationContext context : Context
+    @ApplicationContext val context : Context
 ){
     private val prefs: SharedPreferences =
         context.getSharedPreferences("roomfit_prefs", Context.MODE_PRIVATE)

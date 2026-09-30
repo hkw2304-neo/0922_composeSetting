@@ -35,13 +35,13 @@ val Typography = Typography(
     */
 )
 
+// 커스턴 폰트 설정
 val RoomFitFontFamily = FontFamily(
     Font(R.font.roomfit_basic, FontWeight.Normal),
 //    Font(R.font.roomfit_basic, FontWeight.Medium),
 //    Font(R.font.roomfit_basic, FontWeight.Bold)
 )
 
-// 커스턴 폰트 설정
 val RoomFitTypography = Typography(
     bodyLarge = TextStyle(
         fontFamily = RoomFitFontFamily,
